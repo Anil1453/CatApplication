@@ -1,0 +1,26 @@
+﻿@model CatViewModel
+
+<h1>Edit Cat</h1>
+<hr />
+<form method="post">
+    <div class="form-group">
+        <label>Cat Name:</label>
+        <input type="text" name="Name" id="name" class="form-control"value=" @Model.Name" />
+    </div>
+    <div class="form-group">
+        <label>Cat Age:</label>
+        <input type="text" name="Age" id="age" class="form-control" value="@Model.Age" />
+    </div>
+    <div class="form-group">
+
+        <label>Cat Breed:</label>
+        <input type="text" name="Breed" id="breed" class="form-control"value="@Model.Breed" />
+    </div>
+    <div class="form-group">
+        <label>Cat Cat Image URL:</label>
+        <input type="text" name="ImageURL" id="imageurl" class="form-control"value="@Model.ImageURL" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="submit" class="btn btn-primary" />
+    </div>
+</form>
